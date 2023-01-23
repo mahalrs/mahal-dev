@@ -1,0 +1,6 @@
+:root {
+  --font-fallback: Roboto, 'Open Sans', Helvetica, Verdana, Tahoma, sans-serif;
+  --font-body: var(--font-roboto), var(--font-fallback);
+  --font-heading: var(--font-roboto), var(--font-fallback);
+  --font-code: var(--font-roboto-mono), Menlo, Monaco, 'Courier New', monospace;
+}

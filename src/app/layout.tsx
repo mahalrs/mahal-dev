@@ -1,8 +1,8 @@
 import Header from '@/common/components/Header'
 import Footer from '@/common/components/Footer'
 
-import '@/common/styles/base.css'
-import '@/common/styles/globals.css'
+import { roboto, roboto_mono } from './fonts'
+import './globals.scss'
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${roboto.variable} ${roboto_mono.variable}`}>
       <head />
       <body>
         <Header />
