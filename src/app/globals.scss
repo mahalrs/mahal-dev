@@ -1,5 +1,6 @@
-@import '@/common/styles/base.scss';
-@import '@/common/styles/theme.scss';
+@use '@/common/styles/base';
+@use '@/common/styles/fonts';
+@use '@/common/styles/theme';
 
 html,
 body {
@@ -8,13 +9,18 @@ body {
 }
 
 body {
-  font-family: var(--font-body);
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb));
+  font-family: fonts.$font-body;
+  color: theme.$foreground-theme-lt;
+  background-color: theme.$background-theme-lt;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  body {
+    color: theme.$foreground-theme-dk;
+    background-color: theme.$background-theme-dk;
   }
 }
