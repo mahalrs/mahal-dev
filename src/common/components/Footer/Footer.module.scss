@@ -1,0 +1,75 @@
+@use '@/common/styles/breakpoints';
+@use '@/common/styles/mixins';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--base-space-md);
+  background-color: var(--footer-color-background);
+  color: var(--footer-color-on-background);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-content-width);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContainer {
+  padding: var(--base-space-xs);
+
+  .logo {
+    filter: invert(1);
+  }
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--base-space-xs);
+
+  a,
+  a:visited {
+    color: var(--footer-color-on-background);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  // Enable hover only on non-touch devices
+  @media (hover: hover) and (pointer: fine) {
+    .icon:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .icon {
+    width: 32px;
+    height: auto;
+  }
+}
+
+.copyright {
+  @include mixins.type-caption;
+  padding: var(--base-space-xs);
+}
+
+@media (min-width: breakpoints.$medium) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+@use './breakpoints';
+
+:root {
+  --space-xs: 0.5rem; // 8px based on 16px root font size
+  --space-sm: 1rem; // 16
+  --space-md: 1.5rem; // 24
+  --space-lg: 2rem; // 32
+  --space-xl: 2.5rem; // 40
+  --space-xxl: 3rem; // 48
+  --space-xxxl: 3.5rem; // 56
+
+  --base-space-xs: var(--space-xs);
+  --base-space-sm: var(--space-sm);
+  --base-space-md: var(--space-md);
+  --base-space-lg: var(--space-lg);
+  --base-space-xl: var(--space-xl);
+
+  --max-content-width: 992px;
+}
+
+@media (min-width: breakpoints.$small) {
+  :root {
+    --base-space-xs: var(--space-sm);
+    --base-space-sm: var(--space-md);
+    --base-space-md: var(--space-lg);
+    --base-space-lg: var(--space-xl);
+    --base-space-xl: var(--space-xxl);
+  }
+}
+
+@media (min-width: breakpoints.$medium) {
+  :root {
+
+    --base-space-xs: var(--space-md);
+    --base-space-sm: var(--space-lg);
+    --base-space-md: var(--space-xl);
+    --base-space-lg: var(--space-xxl);
+    --base-space-xl: var(--space-xxxl);
+  }
+}

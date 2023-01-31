@@ -1,7 +1,43 @@
+import Image from 'next/image'
+import { GitHubMark, LinkedInMark } from '@/common/components/Icon'
+import styles from './Footer.module.scss'
+
 export default function Footer() {
   return (
-    <footer>
-      <h1>Footer</h1>
-    </footer>
+    <div className={styles.wrapper}>
+      <footer className={styles.footer}>
+        <div className={styles.main}>
+          <section className={styles.logoContainer}>
+            <a href='/'>
+              <Image
+                src='/rajwinder-mahal.svg'
+                alt='Rajwinder Mahal wordmark'
+                className={styles.logo}
+                width={256}
+                height={256}
+                priority
+              />
+            </a>
+          </section>
+          <section className={styles.socialContainer}>
+            <a
+              href='https://www.linkedin.com/in/mahalrajwinder'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <LinkedInMark className={styles.icon}/>
+            </a>
+            <a
+              href='https://github.com/mahalrs'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <GitHubMark className={styles.icon}/>
+            </a>
+          </section>
+        </div>
+        <section className={styles.copyright}>Rajwinder Mahal &copy; 2023</section>
+      </footer>
+    </div>
   )
 }

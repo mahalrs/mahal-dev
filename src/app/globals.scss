@@ -1,26 +1,30 @@
 @use '@/common/styles/base';
-@use '@/common/styles/fonts';
-@use '@/common/styles/theme';
+@use '@/common/styles/colors';
+@use '@/common/styles/spacing';
+@use '@/common/styles/typography';
+@use '@/common/styles/mixins';
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  font-size: 16px;
 }
 
 body {
-  font-family: fonts.$font-body;
-  color: theme.$foreground-theme-lt;
-  background-color: theme.$background-theme-lt;
+  @include mixins.type-body1;
+  color: var(--color-on-background);
+  background-color: var(--color-background);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
 
-  body {
-    color: theme.$foreground-theme-dk;
-    background-color: theme.$background-theme-dk;
-  }
+a:visited {
+  color: var(--color-link-variant);
+}
+
+a:hover {
+  text-decoration: underline;
 }

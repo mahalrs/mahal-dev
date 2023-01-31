@@ -1,0 +1,21 @@
+@use '@/common/styles/mixins';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--base-space-md);
+}
+
+.main {
+  width: 100%;
+  max-width: var(--max-content-width);
+}
+
+.headline {
+  @include mixins.type-headline1;
+}
+
+.para {
+  margin: var(--base-space-sm) 0;
+}
