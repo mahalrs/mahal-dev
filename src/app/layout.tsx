@@ -1,3 +1,4 @@
+import AnalyticsWrapper from '@/common/components/Analytics/Analytics'
 import Header from '@/common/components/Header'
 import Footer from '@/common/components/Footer'
 import NoScript from '@/common/components/NoScript'
@@ -18,6 +19,7 @@ export default function RootLayout({
         <NoScript />
         {children}
         <Footer />
+        <AnalyticsWrapper />
       </body>
     </html>
   )
