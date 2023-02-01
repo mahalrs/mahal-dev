@@ -5,9 +5,9 @@ export default function Home() {
     <div className={styles.wrapper}>
       <main  className={styles.main}>
         <div className={styles.headline}>Hi &#128075;</div>
-        <h1 className={styles.headline}>I'm Rajwinder.</h1>
+        <h1 className={styles.headline}>{`I'm Rajwinder.`}</h1>
         <p className={styles.para}>
-          I am a MS candidate in Computer Science at Columbia University where I'm specializing in machine learning. Before coming to Columbia, I completed a master's degree in Innovation and Entrepreneurship and a bachelor's degree in Computer Science at the University of California, Irvine.
+          {`I am a MS candidate in Computer Science at Columbia University where I'm specializing in machine learning. Before coming to Columbia, I completed a master's degree in Innovation and Entrepreneurship and a bachelor's degree in Computer Science at the University of California, Irvine.`}
         </p>
         <p className={styles.para}>
           Throughout my academic career, I have developed a strong foundation in computer science and software engineering principles. I have completed coursework in machine learning, distributed systems, cloud computing, programming languages, and software design. Additionally, I have experience working with cloud computing platforms, including Google Cloud Platform and Amazon Web Services.
