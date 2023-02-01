@@ -63,7 +63,7 @@
   --type-overline-letter-spacing: 1.5px;
 }
 
-@media (min-width: breakpoints.$small) {
+@media (min-width: breakpoints.$sm) {
   :root {
     --type-headline1-font-size: 3.75rem;
     --type-headline2-font-size: 2rem;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: breakpoints.$medium) {
+@media (min-width: breakpoints.$md) {
   :root {
     --type-headline1-font-size: 5.813rem;
     --type-headline2-font-size: 3.625rem;

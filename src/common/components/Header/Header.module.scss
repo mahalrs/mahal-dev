@@ -101,7 +101,7 @@ $header-padding-lg: 16px var(--base-space-md);
   }
 }
 
-@media (min-width: breakpoints.$small) {
+@media (min-width: breakpoints.$sm) {
   .wrapper {
     padding: $header-padding-md;
     height: $header-height-md;
@@ -122,7 +122,7 @@ $header-padding-lg: 16px var(--base-space-md);
   }
 }
 
-@media (min-width: breakpoints.$medium) {
+@media (min-width: breakpoints.$md) {
   .wrapper {
     padding: $header-padding-lg;
     height: $header-height-lg;

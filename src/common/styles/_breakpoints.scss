@@ -1,4 +1,12 @@
-$small: 521px;
-$medium: 921px;
-$large: 1341px;
-$xlarge: 1920px;
+// 478px and less:    // mobile first design
+$mobile-lg: 478px;    // min 478px
+$tablet-rg: 767px;    // min 767px
+$tablet-lg: 991px;    // min 991px
+$desktop-sm: 1280px;  // min 1280 px
+$desktop-rg: 1440px;  // min 1440 px
+$desktop-lg: 1920px;  // min 1920 px
+
+// shorthand
+$sm: $mobile-lg;
+$md: $tablet-rg;
+$lg: $tablet-lg;
