@@ -31,14 +31,8 @@ $header-padding-lg: 16px var(--base-space-md);
   max-width: var(--max-content-width);
 }
 
-.logoContainer {
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.logo {
+.rsm,
+.rsmLogo {
   width: auto;
   height: 100%;
 }
@@ -107,14 +101,6 @@ $header-padding-lg: 16px var(--base-space-md);
     height: $header-height-md;
   }
 
-  .rsm {
-    display: none;
-  }
-
-  .rsmLogo {
-    display: block;
-  }
-
   .github {
     a {
       padding: 6px 12px;
@@ -128,6 +114,14 @@ $header-padding-lg: 16px var(--base-space-md);
     height: $header-height-lg;
   }
 
+  .rsm {
+    display: none;
+  }
+
+  .rsmLogo {
+    display: block;
+  }
+
   .github {
     a {
       padding: 7px 14px;
@@ -136,13 +130,15 @@ $header-padding-lg: 16px var(--base-space-md);
 }
 
 [data-theme='dark'] {
-  .logo {
+  .rsm,
+  .rsmLogo {
     filter: invert(1);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo {
+  .rsm,
+  .rsmLogo {
     filter: invert(1);
   }
 }

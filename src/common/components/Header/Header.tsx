@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import rsm from '@/../public/rsm.svg'
+import rsmLogo from '@/../public/rsm-logo.svg'
 import { OpenInNew } from '@/common/components/Icon'
 import styles from './Header.module.scss'
 
@@ -6,22 +8,18 @@ export default function Header() {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-        <section className={styles.logoContainer}>
+        <section>
           <a href='/'>
             <Image
-              src='/rsm.svg'
-              alt='RSM Logo'
-              className={`${styles.logo} ${styles.rsm}`}
-              width={256}
-              height={256}
+              src={rsm}
+              alt='RSM - Rajwinder Mahal Logo'
+              className={styles.rsm}
               priority
             />
             <Image
-              src='/rsm-logo.svg'
+              src={rsmLogo}
               alt='RSM - Rajwinder Mahal Logo'
-              className={`${styles.logo} ${styles.rsmLogo}`}
-              width={256}
-              height={256}
+              className={styles.rsmLogo}
               priority
             />
           </a>

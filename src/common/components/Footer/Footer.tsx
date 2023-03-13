@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import rsm from '@/../public/rsm.svg'
 import { GitHubMark, LinkedInMark } from '@/common/components/Icon'
 import styles from './Footer.module.scss'
 
@@ -10,12 +11,9 @@ export default function Footer() {
           <section className={styles.logoContainer}>
             <a href='/'>
               <Image
-                src='/rajwinder-mahal.svg'
-                alt='Rajwinder Mahal wordmark'
+                src={rsm}
+                alt='RSM - Rajwinder Mahal Logo'
                 className={styles.logo}
-                width={256}
-                height={256}
-                priority
               />
             </a>
           </section>
