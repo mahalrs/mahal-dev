@@ -25,11 +25,13 @@
 }
 
 .logoContainer {
-  padding: var(--base-space-xs);
+  padding: var(--base-space-xs) 0;
+}
 
-  .logo {
-    filter: invert(1);
-  }
+.logo {
+  filter: invert(1);
+  width: 64px;
+  height: auto;
 }
 
 .socialContainer {
@@ -37,7 +39,7 @@
   flex-direction: row;
   justify-content: center;
   gap: var(--space-sm);
-  padding: var(--base-space-xs);
+  padding: var(--base-space-xs) 0;
 
   a,
   a:visited {
@@ -63,13 +65,17 @@
 
 .copyright {
   @include mixins.type-caption;
-  padding: var(--base-space-xs);
+  padding: var(--base-space-xs) 0;
 }
 
-@media (min-width: breakpoints.$lg) {
+@media (min-width: breakpoints.$md) {
   .main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .logo {
+    width: 128px;
   }
 }
