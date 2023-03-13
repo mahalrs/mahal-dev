@@ -34,7 +34,9 @@ export default function Footer() {
             </a>
           </section>
         </div>
-        <section className={styles.copyright}>Rajwinder Mahal &copy; 2023</section>
+        <section className={styles.copyright}>
+          Rajwinder Mahal &copy; {new Date().getFullYear()}
+        </section>
       </footer>
     </div>
   )
