@@ -6,44 +6,16 @@
   letter-spacing: var(--type-#{$name}-letter-spacing);
 }
 
-@mixin type-headline1 {
-  @include _create-type(headline, headline1);
+@mixin type-headline($level) {
+  @include _create-type(headline, headline#{$level});
 }
 
-@mixin type-headline2 {
-  @include _create-type(headline, headline2);
+@mixin type-subtitle($level) {
+  @include _create-type(body, subtitle#{$level});
 }
 
-@mixin type-headline3 {
-  @include _create-type(headline, headline3);
-}
-
-@mixin type-headline4 {
-  @include _create-type(headline, headline4);
-}
-
-@mixin type-headline5 {
-  @include _create-type(headline, headline5);
-}
-
-@mixin type-headline6 {
-  @include _create-type(headline, headline6);
-}
-
-@mixin type-subtitle1 {
-  @include _create-type(headline, subtitle1);
-}
-
-@mixin type-subtitle2 {
-  @include _create-type(headline, subtitle2);
-}
-
-@mixin type-body1 {
-  @include _create-type(body, body1);
-}
-
-@mixin type-body2 {
-  @include _create-type(body, body2);
+@mixin type-body($level) {
+  @include _create-type(body, body#{$level});
 }
 
 @mixin type-button {

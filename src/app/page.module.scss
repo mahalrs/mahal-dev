@@ -1,21 +1,42 @@
 @use '@/common/styles/mixins';
+@use '@/common/styles/vars';
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--base-space-md);
+  padding: vars.$space-md;
 }
 
 .main {
   width: 100%;
-  max-width: var(--max-content-width);
+  max-width: vars.$max-content-width-sm;
 }
 
 .headline {
-  @include mixins.type-headline1;
+  @include mixins.type-headline(1);
 }
 
 .para {
-  margin: var(--base-space-sm) 0;
+  margin: vars.$space-sm 0;
+}
+
+@media (min-width: vars.$sm) {
+  .wrapper {
+    padding: vars.$space-lg;
+  }
+
+  .para {
+    margin: vars.$space-md 0;
+  }
+}
+
+@media (min-width: vars.$lg) {
+  .wrapper {
+    padding: vars.$space-xl;
+  }
+
+  .para {
+    margin: vars.$space-lg 0;
+  }
 }

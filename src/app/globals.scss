@@ -1,6 +1,5 @@
 @use '@/common/styles/base';
 @use '@/common/styles/colors';
-@use '@/common/styles/spacing';
 @use '@/common/styles/typography';
 @use '@/common/styles/mixins';
 
@@ -11,7 +10,7 @@ body {
 }
 
 body {
-  @include mixins.type-body1;
+  @include mixins.type-body(1);
   color: var(--color-on-background);
   background-color: var(--color-background);
 }

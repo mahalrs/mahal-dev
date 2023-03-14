@@ -1,13 +1,5 @@
-@use '@/common/styles/breakpoints';
+@use '@/common/styles/vars';
 @use '@/common/styles/mixins';
-
-$header-height-sm: 44px;
-$header-height-md: 54px;
-$header-height-lg: 64px;
-
-$header-padding-sm: 8px var(--base-space-md);
-$header-padding-md: 12px var(--base-space-md);
-$header-padding-lg: 16px var(--base-space-md);
 
 .wrapper {
   display: flex;
@@ -15,8 +7,8 @@ $header-padding-lg: 16px var(--base-space-md);
   align-items: center;
   position: sticky;
   top: 0;
-  padding: $header-padding-sm;
-  height: $header-height-sm;
+  padding: 8px vars.$space-md;
+  height: 44px;
   color: var(--header-color-on-background);
   background-color: var(--header-color-background);
   box-shadow: inset 0 -1px 0 0 var(--header-color-outline);
@@ -28,7 +20,7 @@ $header-padding-lg: 16px var(--base-space-md);
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-width: var(--max-content-width);
+  max-width: vars.$max-content-width-lg;
 }
 
 .rsm,
@@ -95,10 +87,10 @@ $header-padding-lg: 16px var(--base-space-md);
   }
 }
 
-@media (min-width: breakpoints.$sm) {
+@media (min-width: vars.$sm) {
   .wrapper {
-    padding: $header-padding-md;
-    height: $header-height-md;
+    padding: 12px vars.$space-lg;
+    height: 54px;
   }
 
   .github {
@@ -108,12 +100,7 @@ $header-padding-lg: 16px var(--base-space-md);
   }
 }
 
-@media (min-width: breakpoints.$md) {
-  .wrapper {
-    padding: $header-padding-lg;
-    height: $header-height-lg;
-  }
-
+@media (min-width: vars.$md) {
   .rsm {
     display: none;
   }
@@ -126,6 +113,13 @@ $header-padding-lg: 16px var(--base-space-md);
     a {
       padding: 7px 14px;
     }
+  }
+}
+
+@media (min-width: vars.$lg) {
+  .wrapper {
+    padding: 16px vars.$space-xl;
+    height: 64px;
   }
 }
 

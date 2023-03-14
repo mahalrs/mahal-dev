@@ -1,6 +1,5 @@
-/*! modern-normalize v1.1.0  | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! normalize.css            | MIT License | https://github.com/necolas/normalize.css */
 /*! tailwindcss preflight.css | MIT License | https://github.com/tailwindlabs/tailwindcss */
-/*! ress                     | MIT License | https://github.com/filipelinhares/ress */
 
 *,
 ::before,
@@ -33,6 +32,8 @@ hr {
 }
 
 abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
   text-decoration: underline dotted;
 }
 
@@ -47,6 +48,7 @@ h6 {
 }
 
 a {
+  background-color: transparent;
   color: inherit;
   text-decoration: inherit;
 }
@@ -58,8 +60,8 @@ strong {
 
 code,
 kbd,
-samp,
-pre {
+pre,
+samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
   font-size: 1em;
 }
@@ -105,14 +107,19 @@ textarea {
 }
 
 button,
+input {
+  overflow: visible;
+}
+
+button,
 select {
   text-transform: none;
 }
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   background-color: transparent;
   background-image: none;
@@ -144,11 +151,12 @@ progress {
   height: auto;
 }
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
+::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -192,6 +200,7 @@ menu {
 }
 
 textarea {
+  overflow: auto;
   resize: vertical;
 }
 

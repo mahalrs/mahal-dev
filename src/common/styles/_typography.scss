@@ -1,4 +1,4 @@
-@use './breakpoints';
+@use './vars';
 
 :root {
   --font-fallback: Roboto, 'Open Sans', Helvetica, Verdana, Tahoma, sans-serif;
@@ -63,25 +63,19 @@
   --type-overline-letter-spacing: 1.5px;
 }
 
-@media (min-width: breakpoints.$sm) {
+@media (min-width: vars.$sm) {
   :root {
     --type-headline1-font-size: 3.75rem;
     --type-headline2-font-size: 2rem;
     --type-headline3-font-size: 1.5rem;
-    --type-headline4-font-size: 1.25rem;
-    --type-headline5-font-size: 1.125rem;
-    --type-headline6-font-size: 1rem;
     --type-subtitle1-font-size: 1rem;
     --type-subtitle2-font-size: 0.875rem;
     --type-body1-font-size: 1rem;
     --type-body2-font-size: 0.875rem;
-    --type-button-font-size: 0.875rem;
-    --type-caption-font-size: 0.75rem;
-    --type-overline-font-size: 0.625rem;
   }
 }
 
-@media (min-width: breakpoints.$md) {
+@media (min-width: vars.$md) {
   :root {
     --type-headline1-font-size: 5.813rem;
     --type-headline2-font-size: 3.625rem;
@@ -89,12 +83,5 @@
     --type-headline4-font-size: 2.063rem;
     --type-headline5-font-size: 1.438rem;
     --type-headline6-font-size: 1.188rem;
-    --type-subtitle1-font-size: 1rem;
-    --type-subtitle2-font-size: 0.875rem;
-    --type-body1-font-size: 1rem;
-    --type-body2-font-size: 0.875rem;
-    --type-button-font-size: 0.875rem;
-    --type-caption-font-size: 0.75rem;
-    --type-overline-font-size: 0.625rem;
   }
 }
