@@ -9,9 +9,9 @@
   top: 0;
   padding: 8px vars.$space-md;
   height: 44px;
-  color: var(--header-color-on-background);
-  background-color: var(--header-color-background);
-  box-shadow: inset 0 -1px 0 0 var(--header-color-outline);
+  color: var(--color-on-header);
+  background-color: var(--color-header);
+  box-shadow: inset 0 -1px 0 0 var(--color-outline);
 }
 
 .header {
@@ -52,13 +52,12 @@
   a {
     padding: 5px 10px;
     border-radius: 1rem;
-    border: 1px solid var(--header-color-background);
-    background-color: var(--header-color-on-background);
+    background-color: var(--color-inverse-header);
   }
 
   a,
   a:visited {
-    color: var(--header-color-background);
+    color: var(--color-on-inverse-header);
   }
 
   a:hover {
@@ -80,9 +79,7 @@
   // Enable hover only on non-touch devices
   @media (hover: hover) and (pointer: fine) {
     a:hover {
-      border-color: var(--header-color-outline);
-      background-color: var(--header-color-background);
-      color: var(--header-color-on-background);
+      background-color: var(--color-inverse-header-variant);
     }
   }
 }

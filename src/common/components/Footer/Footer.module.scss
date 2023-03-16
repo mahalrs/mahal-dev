@@ -6,8 +6,8 @@
   flex-direction: column;
   align-items: center;
   padding: vars.$space-md;
-  background-color: var(--footer-color-background);
-  color: var(--footer-color-on-background);
+  background-color: var(--color-footer);
+  color: var(--color-on-footer);
 }
 
 .footer {
@@ -43,7 +43,7 @@
 
   a,
   a:visited {
-    color: var(--footer-color-on-background);
+    color: var(--color-on-footer);
   }
 
   a:hover {
@@ -53,7 +53,7 @@
   // Enable hover only on non-touch devices
   @media (hover: hover) and (pointer: fine) {
     .icon:hover {
-      opacity: 0.5;
+      color: var(--color-on-footer-variant);
     }
   }
 
@@ -66,6 +66,7 @@
 .copyright {
   @include mixins.type-body(2);
   padding: vars.$space-sm 0;
+  color: var(--color-on-footer-variant);
 }
 
 @media (min-width: vars.$sm) {
