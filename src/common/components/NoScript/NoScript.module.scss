@@ -1,0 +1,15 @@
+@use '@/common/styles/vars';
+
+.noscript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: vars.$space-md;
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+.msg {
+  max-width: vars.$max-content-width-lg;
+  text-align: center;
+}

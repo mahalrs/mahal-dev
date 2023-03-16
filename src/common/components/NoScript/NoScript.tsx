@@ -1,5 +1,11 @@
+import styles from './NoScript.module.scss'
+
 export default function NoScript() {
   return (
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript className={styles.noscript}>
+      <div className={styles.msg}>
+        You need to enable JavaScript to run this app.
+      </div>
+    </noscript>
   )
 }
