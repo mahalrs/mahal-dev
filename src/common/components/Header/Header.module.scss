@@ -74,6 +74,8 @@
   .icon {
     display: inline-block;
     margin-left: 4px;
+    width: var(--type-button-font-size);
+    height: auto;
   }
 
   // Enable hover only on non-touch devices
