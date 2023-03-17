@@ -1,4 +1,12 @@
+import type { Metadata } from 'next'
+
+import meta from './page.metadata.json'
 import styles from './page.module.scss'
+
+export const metadata: Metadata = {
+  title: meta.title,
+  description: meta.description,
+};
 
 export default function Home() {
   return (
