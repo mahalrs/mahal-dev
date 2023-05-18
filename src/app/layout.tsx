@@ -1,22 +1,21 @@
-import type { Metadata } from 'next'
+import AnalyticsWrapper from '@components/analytics'
+import Header from '@components/header'
+import Footer from '@components/footer'
 
-import AnalyticsWrapper from '@/common/components/Analytics/Analytics'
-import Header from '@/common/components/Header'
-import Footer from '@/common/components/Footer'
-import NoScript from '@/common/components/NoScript'
+import { inter, roboto_mono } from './fonts'
+import './globals.css'
 
-import { roboto, roboto_mono } from './fonts'
-import './globals.scss'
-
-export const metadata: Metadata = {
+export const metadata = {
+  title: {
+    template: '%s | RSM',
+    default: 'Rajwinder Mahal | RSM',
+  },
+  metadataBase: new URL('https://www.mahal.dev'),
   referrer: 'strict-origin-when-cross-origin',
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://www.mahal.dev',
-  },
-};
+}
 
 export default function RootLayout({
   children,
@@ -24,11 +23,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="light" className={`${roboto.variable} ${roboto_mono.variable}`}>
-      <head />
-      <body>
+    <html lang='en'>
+      <body className={`${inter.variable} ${roboto_mono.variable}`}>
         <Header />
-        <NoScript />
+        <noscript className='flex justify-center px-6 sm:px-8 py-3 md:py-4 bg-[#ffdad6] dark:bg-[#93000a] text-[#410002] dark:text-[#ffdad6]'>
+          <div>You need to enable JavaScript to run this app.</div>
+        </noscript>
         {children}
         <Footer />
         <AnalyticsWrapper />
