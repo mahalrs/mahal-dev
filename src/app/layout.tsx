@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
+    <html lang='en-US'>
       <body className={`${inter.variable} ${roboto_mono.variable}`}>
         <Header />
         <noscript className='flex justify-center px-6 sm:px-8 py-3 md:py-4 bg-[#ffdad6] dark:bg-[#93000a] text-[#410002] dark:text-[#ffdad6]'>
