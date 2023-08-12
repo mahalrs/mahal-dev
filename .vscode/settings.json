@@ -1,5 +1,23 @@
 {
   "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "files.associations": {
+    "AUTHORS": "plaintext",
+    "CODEOWNERS": "plaintext",
+    "CONTRIBUTORS": "plaintext",
+    ".dockerignore": "ignore",
+    "*.mdx": "markdown"
+  },
+
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  }
 }
