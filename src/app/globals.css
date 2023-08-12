@@ -3,16 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --rsm-color-background: #ffffff;
-  --rsm-color-on-background: #1b1b1b;
-  --rsm-color-link: #276ef1;
+  --rsm-color-primary: 15 20 25;
+  --rsm-color-primary-variant: 39 44 48;
+  --rsm-color-on-primary: 255 255 255;
+  --rsm-color-background: 255 255 255;
+  --rsm-color-on-background: 15 20 25;
+  --rsm-color-on-background-variant: 83 100 113;
+  --rsm-color-surface: 247 249 249;
+  --rsm-color-on-surface: 15 20 25;
+  --rsm-color-on-surface-variant: 83 100 113;
+  --rsm-color-error: 186 26 26;
+  --rsm-color-on-error: 255 255 255;
+  --rsm-color-error-variant: 255 218 214;
+  --rsm-color-on-error-variant: 65 0 2;
+  --rsm-color-link: 39 110 241;
+  --rsm-color-border: 239 243 244;
+  --rsm-color-hover: 0 0 0 / 0.03;
+  --rsm-color-hover-variant: 15 20 25 / 0.1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --rsm-color-on-background: #cececd;
-    --rsm-color-background: #161617;
-    --rsm-color-link: #8ab4f8;
+    --rsm-color-primary: 239 243 244;
+    --rsm-color-primary-variant: 215 219 220;
+    --rsm-color-on-primary: 15 20 25;
+    --rsm-color-background: 21 32 43;
+    --rsm-color-on-background: 247 249 249;
+    --rsm-color-on-background-variant: 139 152 165;
+    --rsm-color-surface: 30 39 50;
+    --rsm-color-on-surface: 247 249 249;
+    --rsm-color-on-surface-variant: 139 152 165;
+    --rsm-color-error: 255 180 171;
+    --rsm-color-on-error: 105 0 5;
+    --rsm-color-error-variant: 147 0 10;
+    --rsm-color-on-error-variant: 255 218 214;
+    --rsm-color-link: 138 180 248;
+    --rsm-color-border: 56 68 77;
+    --rsm-color-hover: 255 255 255 / 0.03;
+    --rsm-color-hover-variant: 247 249 249 / 0.1;
   }
 }
 
@@ -26,18 +54,8 @@
     @apply leading-normal;
     @apply whitespace-normal;
     @apply break-words;
-  }
-}
-
-@layer components {
-  .rsm-link,
-  .rsm-link:visited,
-  .rsm-link:hover {
-    color: var(--rsm-color-link);
-  }
-
-  .rsm-link:hover {
-    text-decoration: underline;
+    @apply bg-color-background;
+    @apply text-color-on-background;
   }
 }
 
@@ -47,19 +65,7 @@ body {
 }
 
 body {
-  color: var(--rsm-color-on-background);
-  background: var(--rsm-color-background);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  tab-size: 4;
-  -moz-tab-size: 4;
-  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-}
-
-a,
-a:visited,
-a:hover {
-  color: inherit;
-  text-decoration: none;
 }

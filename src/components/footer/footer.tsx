@@ -1,39 +1,58 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 import { GitHubIcon, LinkedInIcon } from '@components/icons'
-import rsm from '@public/rsm.svg'
+
+import rsmMonogram from '@public/rsm-monogram.svg'
 
 export default function Footer() {
   return (
-    <div className='flex justify-center bg-black dark:bg-[#121212] text-white px-6 sm:px-8 py-6 sm:py-8 md:py-10'>
-      <footer className='w-full h-full max-w-screen-xl'>
-        <div className='md:flex md:justify-between'>
-          <section className='flex justify-center py-2 sm:py-4'>
-            <a href='/'>
+    <div className='px-4 sm:px-6 py-8 md:py-16 bg-color-surface'>
+      <footer className='max-w-screen-xl mx-auto space-y-6 text-sm'>
+        <div className='flex flex-col md:flex-row gap-8 md:justify-between'>
+          <div className='flex md:flex-col justify-center'>
+            <Link href='/'>
               <Image
-                src={rsm}
-                alt='RSM - Rajwinder Mahal Logo'
-                className='w-auto h-8 md:h-12 invert'
+                src={rsmMonogram}
+                alt='RSM - Rajwinder Mahal monogram'
+                className='w-auto h-8 dark:invert'
               />
-            </a>
-          </section>
-          <section className='flex justify-center gap-3 md:gap-4 py-2 sm:py-4'>
+            </Link>
+          </div>
+          <div className='flex flex-wrap justify-center gap-2'>
             <a
               href='https://www.linkedin.com/in/mahalrajwinder'
               target='_blank'
               rel='noopener noreferrer'
+              className='hover:bg-color-hover p-3 rounded-full border border-color-border'
             >
-              <LinkedInIcon className='w-auto h-6 md:h-8 hover:opacity-50'/>
+              <LinkedInIcon className='w-auto h-6' />
             </a>
             <a
               href='https://github.com/mahalrs'
               target='_blank'
               rel='noopener noreferrer'
+              className='hover:bg-color-hover p-3 rounded-full border border-color-border'
             >
-              <GitHubIcon className='w-auto h-6 md:h-8 hover:opacity-50'/>
+              <GitHubIcon className='w-auto h-6' />
             </a>
-          </section>
+          </div>
         </div>
-        <div className='flex justify-center py-2 sm:py-4 text-sm text-[#cececd]'>
+        {/* <div className='flex flex-wrap justify-center gap-2'>
+          <Link
+            href='/privacy'
+            className='hover:bg-color-hover px-4 py-2 rounded-full'
+          >
+            Privacy
+          </Link>
+          <Link
+            href='/terms'
+            className='hover:bg-color-hover px-4 py-2 rounded-full'
+          >
+            Terms
+          </Link>
+        </div> */}
+        <div className='text-xs text-center'>
           Rajwinder Mahal &copy; {new Date().getFullYear()}
         </div>
       </footer>
