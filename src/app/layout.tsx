@@ -14,8 +14,8 @@ import { inter, roboto_mono } from './fonts'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | RSM',
-    default: 'Rajwinder Mahal | RSM',
+    template: '%s · RSM',
+    default: 'Rajwinder Mahal · RSM',
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL!),
   referrer: 'strict-origin-when-cross-origin',

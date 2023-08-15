@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { getMetadata } from '@app/metadata'
 
 export const metadata = getMetadata({
-  title: 'Rajwinder Mahal | RSM',
+  title: 'Rajwinder Mahal · RSM',
   description:
     "Rajwinder Mahal is a skilled machine learning engineer, passionate about open-source software. Learn more about Rajwinder's interests and explore his insights on machine learning, startups, and more.",
   url: '/',
