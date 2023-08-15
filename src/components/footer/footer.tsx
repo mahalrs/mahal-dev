@@ -38,20 +38,20 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* <div className='flex flex-wrap justify-center gap-2'>
+        <div className='flex flex-wrap justify-center gap-2'>
           <Link
-            href='/privacy'
+            href='/about'
             className='hover:bg-color-hover px-4 py-2 rounded-full'
           >
-            Privacy
+            About
           </Link>
           <Link
-            href='/terms'
+            href='/contact'
             className='hover:bg-color-hover px-4 py-2 rounded-full'
           >
-            Terms
+            Contact
           </Link>
-        </div> */}
+        </div>
         <div className='text-xs text-center'>
           Rajwinder Mahal &copy; {new Date().getFullYear()}
         </div>
