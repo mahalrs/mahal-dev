@@ -14,19 +14,32 @@ export const metadata = getMetadata({
   url: '/',
 })
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  'name': 'RSM',
-  'legalName': 'RSM',
-  'description': metadata.description,
-  'url': process.env.NEXT_PUBLIC_BASE_URL!,
-  'logo': `${process.env.NEXT_PUBLIC_BASE_URL}/rsm.svg`,
-  'sameAs': [
-    'https://www.linkedin.com/in/mahalrajwinder',
-    'https://github.com/mahalrs',
-  ],
-}
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'RSM',
+    'legalName': 'RSM',
+    'description': metadata.description,
+    'url': process.env.NEXT_PUBLIC_BASE_URL!,
+    'logo': `${process.env.NEXT_PUBLIC_BASE_URL}/rsm.svg`,
+    'sameAs': [
+      'https://www.linkedin.com/in/mahalrajwinder',
+      'https://github.com/mahalrs',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': 'RSM',
+    'alternateName': ['Rajwinder Mahal', 'mahal.dev'],
+    'url': process.env.NEXT_PUBLIC_BASE_URL!,
+    'sameAs': [
+      'https://www.linkedin.com/in/mahalrajwinder',
+      'https://github.com/mahalrs',
+    ],
+  },
+]
 
 export default function Page() {
   return (
