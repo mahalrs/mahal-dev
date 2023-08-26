@@ -7,10 +7,10 @@ import { getMetadata } from '@app/metadata'
 import Content from './content.mdx'
 
 export const metadata = getMetadata({
-  title: 'About Rajwinder Mahal',
+  title: 'Showcase',
   description:
-    'Rajwinder Mahal is a skilled machine learning engineer specializing in machine learning and generative AI as an MS candidate at Columbia University. Rajwinder has experience in building scalable, distributed machine learning systems and is passionate about open-source software.',
-  url: '/about',
+    "Explore a curated list of Rajwinder's top projects, papers, and more.",
+  url: '/showcase',
 })
 
 export default function Page() {

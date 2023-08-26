@@ -34,20 +34,20 @@
     --rsm-color-primary: 239 243 244;
     --rsm-color-primary-variant: 215 219 220;
     --rsm-color-on-primary: 15 20 25;
-    --rsm-color-background: 21 32 43;
-    --rsm-color-on-background: 247 249 249;
-    --rsm-color-on-background-variant: 139 152 165;
-    --rsm-color-surface: 30 39 50;
-    --rsm-color-on-surface: 247 249 249;
-    --rsm-color-on-surface-variant: 139 152 165;
+    --rsm-color-background: 0 0 0;
+    --rsm-color-on-background: 231 233 234;
+    --rsm-color-on-background-variant: 113 118 123;
+    --rsm-color-surface: 22 24 28;
+    --rsm-color-on-surface: 231 233 234;
+    --rsm-color-on-surface-variant: 113 118 123;
     --rsm-color-error: 255 180 171;
     --rsm-color-on-error: 105 0 5;
     --rsm-color-error-variant: 147 0 10;
     --rsm-color-on-error-variant: 255 218 214;
     --rsm-color-link: 138 180 248;
-    --rsm-color-border: 56 68 77;
+    --rsm-color-border: 47 51 54;
     --rsm-color-hover: 255 255 255 / 0.03;
-    --rsm-color-hover-variant: 247 249 249 / 0.1;
+    --rsm-color-hover-variant: 231 233 234 / 0.1;
   }
 }
 

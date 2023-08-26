@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/showcase`,
+      lastModified: new Date(),
+    },
+    {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/reading-list`,
       lastModified: new Date(),
     },

@@ -8,18 +8,34 @@ import Link from 'next/link'
 
 import { GitHubIcon, LinkedInIcon } from '@components/icons'
 
-import rsmMonogram from '@public/rsm-monogram.svg'
+import rsm from '@public/rsm.svg'
 
 export default function Footer() {
   return (
-    <div className='px-4 sm:px-6 py-8 md:py-16 bg-color-surface'>
-      <footer className='max-w-screen-xl mx-auto space-y-6 text-sm'>
-        <div className='flex flex-col md:flex-row gap-8 md:justify-between'>
+    <div className='px-4 sm:px-6 py-8 md:py-16'>
+      <footer className='max-w-screen-xl mx-auto text-sm'>
+        <hr className='text-color-border mb-2' />
+        <div className='flex flex-wrap justify-center gap-2'>
+          <Link
+            href='/about'
+            className='hover:bg-color-hover-variant px-4 py-2 rounded-full'
+          >
+            About
+          </Link>
+          <Link
+            href='/contact'
+            className='hover:bg-color-hover-variant px-4 py-2 rounded-full'
+          >
+            Contact
+          </Link>
+        </div>
+        <hr className='text-color-border mt-2' />
+        <div className='flex flex-col md:flex-row gap-8 md:justify-between mt-8'>
           <div className='flex md:flex-col justify-center'>
             <Link href='/'>
               <Image
-                src={rsmMonogram}
-                alt='RSM - Rajwinder Mahal monogram'
+                src={rsm}
+                alt='RSM - The Site of Rajwinder Mahal'
                 className='w-auto h-8 dark:invert'
               />
             </Link>
@@ -29,7 +45,7 @@ export default function Footer() {
               href='https://www.linkedin.com/in/mahalrajwinder'
               target='_blank'
               rel='noopener noreferrer'
-              className='hover:bg-color-hover p-3 rounded-full border border-color-border'
+              className='hover:bg-color-hover-variant p-3 rounded-full border border-color-border'
             >
               <LinkedInIcon className='w-auto h-6' />
             </a>
@@ -37,27 +53,13 @@ export default function Footer() {
               href='https://github.com/mahalrs'
               target='_blank'
               rel='noopener noreferrer'
-              className='hover:bg-color-hover p-3 rounded-full border border-color-border'
+              className='hover:bg-color-hover-variant p-3 rounded-full border border-color-border'
             >
               <GitHubIcon className='w-auto h-6' />
             </a>
           </div>
         </div>
-        <div className='flex flex-wrap justify-center gap-2'>
-          <Link
-            href='/about'
-            className='hover:bg-color-hover px-4 py-2 rounded-full'
-          >
-            About
-          </Link>
-          <Link
-            href='/contact'
-            className='hover:bg-color-hover px-4 py-2 rounded-full'
-          >
-            Contact
-          </Link>
-        </div>
-        <div className='text-xs text-center'>
+        <div className='text-xs text-center mt-8'>
           Rajwinder Mahal &copy; {new Date().getFullYear()}
         </div>
       </footer>

@@ -15,8 +15,8 @@ export const metadata = getMetadata({
 
 export default function Page() {
   return (
-    <div className='px-4 sm:px-6 py-12 md:py-16 lg:pb-24'>
-      <main className='mx-auto prose prose-sm md:prose-base lg:prose-lg'>
+    <div className='px-4 sm:px-6 py-12 md:py-16'>
+      <main className='mx-auto prose prose-sm md:prose-base lg:prose-lg prose-h1:leading-[1.3]'>
         <Content />
       </main>
     </div>

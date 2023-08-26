@@ -14,9 +14,9 @@ export const metadata = getMetadata({
 
 export default function Page() {
   return (
-    <div className='m-4 sm:m-6 px-4 sm:px-6 py-8 md:p-12 bg-color-surface rounded-3xl min-h-[calc(100vh-56px-32px)] md:min-h-[calc(100vh-56px-48px)] flex'>
+    <div className='p-8 sm:p-12 min-h-[calc(100vh-56px)] flex'>
       <main className='max-w-screen-xl mx-auto flex flex-col justify-center'>
-        <h1 className='text-4xl sm:text-6xl md:text-8xl font-bold'>
+        <h1 className='font-bold text-4xl sm:text-6xl md:text-8xl leading-[1.3] sm:leading-[1.3] md:leading-[1.3]'>
           Contact <br />
           Rajwinder Mahal
         </h1>

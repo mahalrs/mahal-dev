@@ -44,9 +44,9 @@ const jsonLd = [
 export default function Page() {
   return (
     <main>
-      <section className='m-4 sm:m-6 px-4 sm:px-6 py-8 md:p-12 bg-color-surface rounded-3xl min-h-[calc(100vh-56px-32px)] md:min-h-[calc(100vh-56px-48px)] flex'>
+      <section className='p-8 sm:p-12 min-h-[calc(100vh-56px)] flex'>
         <div className='max-w-screen-xl mx-auto flex flex-col justify-center'>
-          <h1 className='text-4xl sm:text-6xl md:text-8xl font-bold'>
+          <h1 className='font-bold text-4xl sm:text-6xl md:text-8xl leading-[1.3] sm:leading-[1.3] md:leading-[1.3]'>
             Rajwinder Mahal
           </h1>
           <div className='text-sm sm:text-base md:text-lg max-w-xl'>
@@ -56,8 +56,8 @@ export default function Page() {
             </p>
             <p className='mt-8'>
               Rajwinder has experience in building scalable machine learning
-              systems and has worked on projects in natural language processing,
-              computer vision, generative AI, and recommender systems.
+              systems and has worked on projects in machine learning, natural
+              language processing, computer vision, and recommender systems.
             </p>
           </div>
           <div className='mt-8'>
@@ -65,33 +65,7 @@ export default function Page() {
               href='/about'
               className='bg-color-primary hover:bg-color-primary-variant text-color-on-primary font-medium px-4 py-2 rounded-lg inline-block'
             >
-              About Me
-            </Link>
-          </div>
-        </div>
-      </section>
-      <section className='m-4 sm:m-6 px-4 sm:px-6 py-8 md:p-12 bg-color-surface rounded-3xl min-h-[calc(100vh-56px-32px)] md:min-h-[calc(100vh-56px-48px)] flex'>
-        <div className='max-w-screen-xl mx-auto flex flex-col justify-center'>
-          <h2 className='text-4xl sm:text-6xl md:text-8xl font-bold'>
-            Reading List
-          </h2>
-          <div className='text-sm sm:text-base md:text-lg max-w-xl'>
-            <p className='mt-16'>
-              Discover essential reads for engineers, entrepreneurs, and tech
-              enthusiasts.
-            </p>
-            <p className='mt-8'>
-              This curated collection includes must-read engineering and startup
-              books, insightful technical blogs, groundbreaking research papers,
-              and more.
-            </p>
-          </div>
-          <div className='mt-8'>
-            <Link
-              href='/reading-list'
-              className='bg-color-primary hover:bg-color-primary-variant text-color-on-primary font-medium px-4 py-2 rounded-lg inline-block'
-            >
-              Reading List
+              About me
             </Link>
           </div>
         </div>

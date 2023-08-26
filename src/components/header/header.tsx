@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import { GitHubIcon } from '@components/icons'
 
-import rsm from '@public/rsm.svg'
 import rsmMonogram from '@public/rsm-monogram.svg'
 
 export default function Header() {
@@ -20,14 +19,8 @@ export default function Header() {
             <Link href='/'>
               <Image
                 src={rsmMonogram}
-                alt='RSM - Rajwinder Mahal monogram'
-                className='w-auto h-8 md:hidden dark:invert'
-                priority
-              />
-              <Image
-                src={rsm}
-                alt='RSM - Rajwinder Mahal logo'
-                className='w-auto h-8 hidden md:block dark:invert'
+                alt='RSM - Rajwinder Mahal'
+                className='w-auto h-8 dark:invert'
                 priority
               />
             </Link>
@@ -37,7 +30,7 @@ export default function Header() {
               href='https://github.com/mahalrs'
               target='_blank'
               rel='noopener noreferrer'
-              className='block hover:bg-color-hover p-3 rounded-full'
+              className='block hover:bg-color-hover-variant p-3 rounded-full'
             >
               <GitHubIcon className='w-auto h-6' />
             </a>
