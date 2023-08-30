@@ -43,9 +43,9 @@ const jsonLd = [
 
 export default function Page() {
   return (
-    <main>
-      <section className='p-8 sm:p-12 min-h-[calc(100vh-56px)] flex'>
-        <div className='max-w-screen-xl mx-auto flex flex-col justify-center'>
+    <>
+      <main className='p-8 sm:p-12 min-h-[calc(100vh-56px)] flex'>
+        <section className='max-w-screen-xl mx-auto flex flex-col justify-center'>
           <h1 className='font-bold text-4xl sm:text-6xl md:text-8xl leading-[1.3] sm:leading-[1.3] md:leading-[1.3]'>
             Rajwinder Mahal
           </h1>
@@ -68,12 +68,12 @@ export default function Page() {
               About me
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    </main>
+    </>
   )
 }
