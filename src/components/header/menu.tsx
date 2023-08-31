@@ -24,6 +24,8 @@ export function Menu() {
 
   useEffect(() => {
     const handleResize = () => {
+      menuRef.current!.style.height = `${window.innerHeight - 56}px`
+
       if (window.innerWidth >= 1024) {
         document.querySelector('body')!.classList.remove('mobile-menu-visible')
       }
@@ -62,10 +64,11 @@ export function Menu() {
   return (
     <div
       className='hidden fixed top-[56px] h-[calc(100vh-56px)] w-full p-4 sm:p-6 bg-color-background/90 backdrop-blur-sm overflow-scroll'
+      style={{ height: `${window.innerHeight - 56}px` }}
       ref={menuRef}
     >
       <ul
-        className='text-color-on-background-variant'
+        className='text-color-on-background text-2xl font-semibold'
         onClick={handleClick}
       >
         {navLinks.map((link) => {
@@ -77,7 +80,7 @@ export function Menu() {
               <Link
                 href={link.path}
                 prefetch={false}
-                className='hover:text-color-on-background px-4 py-2'
+                className='hover:underline underline-offset-8 px-4 py-2'
               >
                 {link.name}
               </Link>
@@ -100,6 +103,7 @@ export function MenuButton() {
       body.classList.remove('mobile-menu-visible')
     } else {
       body.classList.add('mobile-menu-visible')
+      window.scrollTo(0, 0)
     }
 
     setAriaLabel(isOpen ? 'open menu' : 'close menu')
