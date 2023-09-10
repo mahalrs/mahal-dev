@@ -3,15 +3,16 @@
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
 
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { GitHubIcon } from '@components/icons'
-
 import rsmMonogram from '@public/rsm-monogram.svg'
-
-import { Menu, MenuButton } from './menu'
 import { navLinks } from './navLinks'
+
+const Menu = dynamic(() => import('./menu'), { ssr: false })
+const MenuButton = dynamic(() => import('./menuButton'), { ssr: false })
 
 export default function Header() {
   return (

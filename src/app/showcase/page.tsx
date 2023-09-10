@@ -11,6 +11,8 @@ export const metadata = getMetadata({
   description:
     "Explore a curated list of Rajwinder's top projects, papers, and more.",
   url: '/showcase',
+  ogImages: null,
+  twImages: null,
 })
 
 export default function Page() {

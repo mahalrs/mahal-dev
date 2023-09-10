@@ -11,6 +11,8 @@ export const metadata = getMetadata({
   description:
     'Discover essential reads for engineers, entrepreneurs, and tech enthusiasts.',
   url: '/reading-list',
+  ogImages: null,
+  twImages: null,
 })
 
 export default function Page() {
