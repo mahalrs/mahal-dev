@@ -18,7 +18,7 @@ export default function Header() {
           <Image
             src={Rsm}
             alt='RSM - The Site of Rajwinder Mahal'
-            className='h-6 w-auto'
+            className='h-6 w-auto dark:invert'
             priority={false}
           />
         </NextLink>
