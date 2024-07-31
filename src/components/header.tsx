@@ -1,6 +1,6 @@
 // Copyright 2024 The RSM Authors
 
-import { Link } from '@nextui-org/link'
+import { Button } from '@nextui-org/button'
 import Image from 'next/image'
 import NextLink from 'next/link'
 
@@ -22,14 +22,15 @@ export default function Header() {
             priority={false}
           />
         </NextLink>
-        <Link
+        <Button
           as={NextLink}
           href='/projects'
-          color='foreground'
-          underline='hover'
+          variant='bordered'
+          size='sm'
+          className='mr-3'
         >
           Projects
-        </Link>
+        </Button>
       </div>
     </header>
   )
