@@ -2,9 +2,9 @@
 
 'use client'
 
+import { Button } from '@nextui-org/button'
 import { useEffect } from 'react'
 import NextLink from 'next/link'
-import { Button } from '@nextui-org/button'
 
 export default function Error({
   error,

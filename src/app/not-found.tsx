@@ -1,8 +1,8 @@
 // Copyright 2024 The RSM Authors
 
+import { Button } from '@nextui-org/button'
 import { Metadata } from 'next'
 import NextLink from 'next/link'
-import { Button } from '@nextui-org/button'
 
 export const metadata: Metadata = {
   title: '404 Not Found',
