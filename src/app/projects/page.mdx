@@ -1,0 +1,189 @@
+{/* Copyright 2024 The RSM Authors */}
+
+import { Button } from '@nextui-org/button'
+import { Link } from '@nextui-org/link'
+
+export const metadata = {
+  title: 'Projects',
+  description:
+    "Explore a curated list of Rajwinder's top projects, papers, and more.",
+  alternates: {
+    canonical: '/projects',
+  },
+}
+
+# Projects & Papers
+
+Rajwinder has worked on projects in machine learning, natural language processing, computer vision, and recommender systems.
+
+## Opinion Summarization using High-Quality Synthetic Dataset
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/opinion-summarization-using-synthetic-data.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/yelp-summ'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+Opinion summarization is a challenging task as it requires the model to understand the sentiment of the input documents to identify the key information. However, due to the high cost of annotating data, there is a lack of large summary datasets for supervised models. This project explores different approaches to generate high-quality synthetic datasets for opinion summarization.
+
+---
+
+## Multimodal Product Recommendations via LLMs
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/multimodal-product-recommendations-using-llms.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/llm-rec'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+This project combines Vector Quantized Generative Adversarial Network (VQGAN) for image encoding and Sequential Recommendation with BART for processing user interactions and product attributes. This approach uses both content-based and collaborative filtering, leveraging LLMs to capture complex relationships between product attributes and user preferences, while utilizing product images to enhance understanding of product features and aesthetics.
+
+---
+
+## Multi-Modal Image Generation for News Stories
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/multi-modal-image-generation-for-news-stories.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/newsgen'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+This project explores the feasibility of using a multi-modal image generation model for news stories that leverages the power of generative adversarial networks and large language models to generate visually appealing images that are relevant and consistent with the news stories.
+
+---
+
+## News Summarization using Enhanced Content Features
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/news-summarization-using-enhanced-content-features.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/newsum'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+This project explores the feasibility of using additional content features such as news headline, topic modeling, named entities, and sentiment analysis to generate targeted summaries that are concise and informative.
+
+---
+
+## Single Image Super Resolution
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/single-image-super-resolution.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/super-scaler'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+Storing high-resolution images is a challenging problem due to its high storage cost and growing storage demands. To address this issue, this project explores the feasibility of using deep convolutional networks for efficient storage and on-demand high resolution image generation.
+
+---
+
+## Comparative Analysis of Machine Learning Models for Short-Term Rental Price Prediction
+
+<div className='not-prose flex flex-wrap gap-4'>
+  <Button
+    as={Link}
+    href='/_static/short-term-rental-price-prediction.pdf'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Paper
+  </Button>
+  <Button
+    as={Link}
+    href='https://github.com/mahalrs/airbnb-autopilot'
+    isExternal
+    showAnchorIcon
+    variant='bordered'
+    size='sm'
+  >
+    Code
+  </Button>
+</div>
+
+Short-term rentals are gaining popularity in recent years, with Airbnb leading the change. When listing properties, one of the biggest challenges is finding a competitive listing price. In this project, we conducted various experiments to perform comparative analysis of different machine learning models to predict listing price.
