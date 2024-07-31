@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { fontInter, fontMono } from '@/app/fonts'
+import Header from '@/components/header'
 import Footer from '@/components/footer'
 
 import { Providers } from './providers'
@@ -37,6 +38,7 @@ export default function RootLayout({
               You need to enable JavaScript to use this app.
             </div>
           </noscript>
+          <Header />
           {children}
           <Footer />
         </Providers>
