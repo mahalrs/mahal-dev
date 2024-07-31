@@ -1,0 +1,30 @@
+/**
+ * Copyright 2024 The RSM Authors
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      @apply dark;
+    }
+  }
+
+  html,
+  body {
+    max-width: 100dvw;
+  }
+
+  body {
+    @apply min-h-dvh;
+    @apply font-body text-base font-light antialiased;
+    @apply whitespace-normal break-words leading-normal tracking-wide;
+    @apply bg-background text-foreground;
+
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+}

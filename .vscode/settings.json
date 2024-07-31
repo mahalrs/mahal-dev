@@ -1,0 +1,24 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "files.associations": {
+    "AUTHORS": "plaintext",
+    "CODEOWNERS": "plaintext",
+    "CONTRIBUTORS": "plaintext",
+    "*.mdx": "markdown"
+  },
+
+  "[makefile]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  }
+}
